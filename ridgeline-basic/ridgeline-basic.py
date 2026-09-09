@@ -73,7 +73,7 @@ def main():
     ax.set_axisbelow(True)
 
     fig.tight_layout()
-    fig.savefig(SCRIPT_DIR / "ridgeline.png", dpi=150)
+    fig.savefig(SCRIPT_DIR / "ridgeline-basic.png", dpi=150)
     plt.show()
 
 
