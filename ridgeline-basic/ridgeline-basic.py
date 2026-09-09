@@ -61,8 +61,8 @@ def main():
 
     ax.set_yticks([i * row_height for i in range(n)])
     ax.set_yticklabels(groups)
-    ax.set_xlabel(VALUE_COL)
-    ax.set_ylabel(GROUP_COL)
+    ax.set_xlabel("Price")
+    ax.set_ylabel("Borough")
     ax.set_xlim(0, df[VALUE_COL].max())
     ax.set_ylim(0, (n - 1) * row_height + row_height * overlap)
 

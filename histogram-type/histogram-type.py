@@ -81,14 +81,14 @@ def main():
 
     for ax in axes[:n]:
         if ax.get_subplotspec().is_last_row():
-            ax.set_xlabel(VALUE_COL)
+            ax.set_xlabel("Price")
         if ax.get_subplotspec().is_first_col():
             ax.set_ylabel("listings")
 
     handles = [plt.Rectangle((0, 0), 1, 1, facecolor=TYPE_COLORS[t], alpha=0.55, edgecolor=TYPE_COLORS[t]) for t in TYPE_ORDER]
     fig.legend(handles, TYPE_ORDER, loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.02), frameon=False)
 
-    fig.suptitle("Listing price by borough and room type", fontsize=14, fontweight="bold")
+    fig.suptitle("Listing Price by Borough and Room Type", fontsize=14, fontweight="bold")
     fig.text(
         0.5,
         0.01 - 0.03,

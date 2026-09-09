@@ -66,12 +66,12 @@ def main():
 
     for ax in axes[:n]:
         if ax.get_subplotspec().is_last_row():
-            ax.set_xlabel(VALUE_COL)
+            ax.set_xlabel("Price")
     for i, ax in enumerate(axes[:n]):
         if ax.get_subplotspec().is_first_col():
             ax.set_ylabel("listings")
 
-    fig.suptitle("Distribution of listing price by neighbourhood group", fontsize=14, fontweight="bold")
+    fig.suptitle("Distribution of Listing Price by Borough", fontsize=14, fontweight="bold")
     fig.text(
         0.5,
         0.01,
